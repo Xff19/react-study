@@ -1,0 +1,14 @@
+.borderColor{
+    width: 150px;
+    margin-left: 20px;
+}
+.active{
+    border: red 1px solid;
+}
+.inactive{
+    border: gray 1px solid;
+}
+.btnBg{
+    background-color: red;
+    margin-bottom: 10px;
+}
