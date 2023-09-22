@@ -4,7 +4,10 @@ import "./App.css";
 // import ListConent from "./listconent";
 // import ListHead from "./listhead";
 // import ListProvider from "./ListProvider";
-// import BuyCar from './BuyCar'
+import BuyCar from './study01/BuyCar'
+// import ButtonAdd from "./ant/button";
+// // import { Button } from "antd";
+// import { QfButton } from "./QfAnt";
 
 function App() {
   // const num=useRef(0)//它是一个对象
@@ -34,7 +37,9 @@ function App() {
         <ListHead />
         <ListConent />
       </ListProvider> */}
-      {/* <BuyCar/> */}
+      <BuyCar/>
+     {/* <QfButton>button1</QfButton>
+      <ButtonAdd></ButtonAdd> */}
     </div>
   );
 }

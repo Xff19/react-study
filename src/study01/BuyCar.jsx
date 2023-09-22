@@ -1,5 +1,5 @@
 import React, { useEffect,useCallback } from "react";
-import List from "./component/list";
+import List from "../component/List/";
 import axios from "axios";
 import { useImmer } from "use-immer";
 
@@ -23,7 +23,7 @@ export default function BuyCar() {
         }
       })}
     );
-  },[list]);
+  },[]);
   const changeHandle=useCallback((id,num)=>{
     setList((list)=>{
       list.map(item=>{
@@ -34,7 +34,7 @@ export default function BuyCar() {
         }
       })
     })
-  },[list]);
+  },[]);
   return (
     <div style={{ width: "100%" }}>
       <div>
@@ -45,7 +45,7 @@ export default function BuyCar() {
                 key={item.id}
                 list={item}
                 add={
-                  ()=>add(item.id)}
+                add}
                   changeHandle={changeHandle}
               ></List>
             );
